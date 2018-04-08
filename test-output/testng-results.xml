@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 7s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User click on create button (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User creates contacts  using  &quot;Ms.&quot; &quot;Ann&quot; &quot;Bill&quot; &quot;Qualified&quot; &quot;developer&quot; &quot;ann@gmail.com&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 8s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User click on create button (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User creates contacts  using  &quot;Mr.&quot; &quot;Alex&quot; &quot;Kim&quot; &quot;Customer&quot; &quot;customer&quot; &quot;alexkim@gmail.com&quot; (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30379" started-at="2018-04-08T22:34:28Z" finished-at="2018-04-08T22:34:58Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="30379" started-at="2018-04-08T22:34:28Z" finished-at="2018-04-08T22:34:58Z">
+      <class name="com.zurmo.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="setUpClass" is-config="true" duration-ms="134" started-at="2018-04-08T22:34:28Z" finished-at="2018-04-08T22:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" duration-ms="17798" started-at="2018-04-08T22:34:28Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-08T22:34:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact creation and validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creating a contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User click on create button (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User creates contacts  using  &quot;Ms.&quot; &quot;Ann&quot; &quot;Bill&quot; &quot;Qualified&quot; &quot;developer&quot; &quot;ann@gmail.com&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" duration-ms="12380" started-at="2018-04-08T22:34:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-08T22:34:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact creation and validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creating a contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 8s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User click on create button (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User creates contacts  using  &quot;Mr.&quot; &quot;Alex&quot; &quot;Kim&quot; &quot;Customer&quot; &quot;customer&quot; &quot;alexkim@gmail.com&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2018-04-08T22:34:58Z" finished-at="2018-04-08T22:34:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.zurmo.runners.CukesRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
