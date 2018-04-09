@@ -34,4 +34,5 @@ private WebDriver driver;
 	
 	@FindBy(xpath="//div[@class='radio-input']")
 	public List <WebElement> selectList;
+	
 }
