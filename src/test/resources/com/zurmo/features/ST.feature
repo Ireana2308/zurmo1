@@ -34,7 +34,7 @@ Then User should have the following options to create products
 Scenario:  Contact creation and validation	
 And User clicks on "Contacts" on the menu bar	
 Then User click on create button
-And User should type lastname "Obama"
+And User should type lastname "Kim"
 And User should see the created contact
 
 		

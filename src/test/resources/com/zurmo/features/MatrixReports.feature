@@ -1,12 +1,10 @@
 @MatrixReport
 Feature:  Creating Reports using Matrix Report
 
-Background: 
+Scenario: Creating a Matrix Report
 Given   I logged into the Zurmo
 When user clicks on repots on the menu bar
 Then user click on create report button
-
-Scenario: Creating a Matrix Report
 
 Then following menu options should be visible for Report Wizard
 |Rows and Columns|

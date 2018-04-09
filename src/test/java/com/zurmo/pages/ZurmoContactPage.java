@@ -40,6 +40,17 @@ private WebDriver driver;
 	@FindBy(xpath="(//span[@class='z-label'])[1]")
 	public WebElement save;
 	
+	@FindBy(xpath="(//a[@onclick='js:$(\"#CreateModelsToMergeListAndChartView\").closest(\"form\")[0].submit();'])[1]")
+	public WebElement clickLink;
+	
+	@FindBy(xpath="(//div[@class='ui-corner-all jnotify-item ui-state-highlight'])[1]")
+	public WebElement popUp;
+	
+	@FindBy(xpath="//div[@class='juiportlet-widget-head']/h3")
+	public WebElement details;
+	
+	@FindBy(xpath="//div[@class='errorMessage']")
+	public WebElement erorr;
 	
 	public void selectPrefixMethod(String prefixName) {
 		Select select=new Select(prefixV);
@@ -50,6 +61,10 @@ private WebDriver driver;
 	Select choiceStatus=new Select(statusS);
 	choiceStatus.selectByVisibleText(statusChoice);
 	
-		
 	}
+	//public void existingContact(String exisitContact ) {
+//		Select widowP=new Select(s)
+	
+		
+	//}
 }

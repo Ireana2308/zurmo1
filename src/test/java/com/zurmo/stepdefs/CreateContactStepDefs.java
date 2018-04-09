@@ -1,6 +1,7 @@
 package com.zurmo.stepdefs;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.zurmo.pages.ZurmoContactPage;
 import com.zurmo.pages.ZurmoHomePage;
@@ -46,21 +47,13 @@ public class CreateContactStepDefs {
 	contactPage.jTitle.sendKeys(jobTitle);
 	contactPage.email.sendKeys(primaryEmail);
 	contactPage.save.click();
+ contactPage.clickLink.click();
 	}
 
-	@Then("^User validate new created contact information$")
-	public void user_validate_new_created_contact_information() {
-	   
-	}
-
-	@Then("^User clicks on SAVE button$")
-	public void user_clicks_on_SAVE_button() {
-	    
-	}
 
 	@Then("^User should be able to see information about a saved  contact$")
 	public void user_should_be_able_to_see_information_about_a_saved_contact() {
-	    
+	    Assert.assertTrue(contactPage.details.isDisplayed());
 	}
 
 	@Then("^User leaves blank all fields$")
@@ -70,11 +63,12 @@ public class CreateContactStepDefs {
 
 	@Then("^clicks on SAVE button$")
 	public void clicks_on_SAVE_button() {
+	    contactPage.save.click();
 	    
 	}
 
 	@Then("^user should see the \"([^\"]*)\" error$")
 	public void user_should_see_the_error(String arg1) {
-	    
+	    Assert.assertTrue(contactPage.erorr.isDisplayed());
 	}
 }

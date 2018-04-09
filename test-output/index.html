@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.zurmo.runners.CukesRunner" hash-for-method="runScenario(&quot;Creating a Matrix Report&quot;, &quot;Creating Reports using Matrix Report&quot;)">runScenario("Creating a Matrix Report", "Creating Reports using Matrix Report")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.zurmo.runners.CukesRunner" hash-for-method="runScenario(&quot;Contact creation and validation&quot;, &quot;Creating a contact&quot;)">runScenario("Contact creation and validation", "Creating a contact")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.zurmo.runners.CukesRunner" hash-for-method="runScenario(&quot;Contact creation and validation&quot;, &quot;Creating a contact&quot;)">runScenario("Contact creation and validation", "Creating a contact")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.zurmo.runners.CukesRunner" hash-for-method="runScenario(&quot;Creatiog report by Name and Description&quot;, &quot;Creating Reports using Matrix Report&quot;)">runScenario("Creatiog report by Name and Description", "Creating Reports using Matrix Report")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,6 +131,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zurmo.runners.CukesRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Creating a Matrix Report&quot;, &quot;Creating Reports using Matrix Report&quot;)">
+                  </a> <!-- runScenario("Creating a Matrix Report", "Creating Reports using Matrix Report") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Creating a Matrix Report", "Creating Reports using Matrix Report")</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
+	at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
+	at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -130,20 +165,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Contact creation and validation&quot;, &quot;Creating a contact&quot;)">
-                  </a> <!-- runScenario("Contact creation and validation", "Creating a contact") -->
+                  <a name="runScenario(&quot;Creatiog report by Name and Description&quot;, &quot;Creating Reports using Matrix Report&quot;)">
+                  </a> <!-- runScenario("Creatiog report by Name and Description", "Creating Reports using Matrix Report") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Contact creation and validation", "Creating a contact")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Contact creation and validation&quot;, &quot;Creating a contact&quot;)">
-                  </a> <!-- runScenario("Contact creation and validation", "Creating a contact") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Contact creation and validation", "Creating a contact")</span>
+                  <span class="parameters">("Creatiog report by Name and Description", "Creating Reports using Matrix Report")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -153,7 +178,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/n5/23l3g_b94f16bvzkx2nff2sr0000gn/T/testng-eclipse-199932476/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/n5/23l3g_b94f16bvzkx2nff2sr0000gn/T/testng-eclipse-777257749/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,16 +239,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.zurmo.runners.CukesRunner')
-data.setCell(0, 3, 17798);
+data.setCell(0, 3, 24882);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.zurmo.runners.CukesRunner')
-data.setCell(1, 3, 12380);
+data.setCell(1, 3, 12);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,21 +260,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Contact creation and validation", "Creating a contact")</span>
+              <span class="reporter-method-name">runScenario("Creatiog report by Name and Description", "Creating Reports using Matrix Report")</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">User logged into the Zurmo (PASSED : 6s)</div></span>
-                <span class="reporter-method-output"><div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 7s)</div></span>
-                <span class="reporter-method-output"><div "result">User click on create button (PASSED : 1s)</div></span>
-                <span class="reporter-method-output"><div "result">User creates contacts  using  &quot;Ms.&quot; &quot;Ann&quot; &quot;Bill&quot; &quot;Qualified&quot; &quot;developer&quot; &quot;ann@gmail.com&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User should see the following filters (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">user chooses &quot;Name &quot;, &quot;Description&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User types &quot;Sprint Planning&quot; for description field (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User types &quot;John&quot; for Name field (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User chooses  under Select Groupings section  &quot;Start date &quot; as X-Axis and &quot;Owner&quot; as Y-Axis (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User choses under Select Display Columns &quot;Count&quot; and enter 100 (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User types &quot;John &quot; for Name (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Meetings Matrix Report for Jogn should be displayed (PASSED : 0s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Contact creation and validation", "Creating a contact")</span>
+              <span class="reporter-method-name">runScenario("Creating a Matrix Report", "Creating Reports using Matrix Report")</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">User logged into the Zurmo (PASSED : 1s)</div></span>
-                <span class="reporter-method-output"><div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 8s)</div></span>
-                <span class="reporter-method-output"><div "result">User click on create button (PASSED : 1s)</div></span>
-                <span class="reporter-method-output"><div "result">User creates contacts  using  &quot;Mr.&quot; &quot;Alex&quot; &quot;Kim&quot; &quot;Customer&quot; &quot;customer&quot; &quot;alexkim@gmail.com&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I logged into the Zurmo (PASSED : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">user clicks on repots on the menu bar (PASSED : 6s)</div></span>
+                <span class="reporter-method-output"><div "result">user click on create report button (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">following menu options should be visible for Report Wizard (PASSED : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">User chooses &quot;Matrix&quot;and   clicks Create button (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">User  should see the following menu options (FAILED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User chooses &quot;Meetings&quot; (SKIPPED)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,16 +305,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Contact creation and validation", "Creating a contact")</span>
-                <span class="method-start">185 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Creating a Matrix Report", "Creating Reports using Matrix Report")</span>
+                <span class="method-start">192 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Contact creation and validation", "Creating a contact")</span>
-                <span class="method-start">17985 ms</span>
+                <span class="method-name">runScenario("Creatiog report by Name and Description", "Creating Reports using Matrix Report")</span>
+                <span class="method-start">25075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">30366 ms</span>
+                <span class="method-start">25087 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

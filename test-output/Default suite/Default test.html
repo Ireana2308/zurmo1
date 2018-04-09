@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 08 17:34:28 CDT 2018</td>
+<td>Started on:</td><td>Mon Apr 09 17:32:04 CDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30379 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25099 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,45 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating a Matrix Report", "Creating Reports using Matrix Report"<br/>
+<a href="#Output-2117193231" onClick='toggleBox("Output-2117193231", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2117193231" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2117193231">
+<div "result">I logged into the Zurmo (PASSED : 5s)</div><br/>
+<div "result">user clicks on repots on the menu bar (PASSED : 6s)</div><br/>
+<div "result">user click on create report button (PASSED : 1s)</div><br/>
+<div "result">following menu options should be visible for Report Wizard (PASSED : 5s)</div><br/>
+<div "result">User chooses &quot;Matrix&quot;and   clicks Create button (PASSED : 2s)</div><br/>
+<div "result">User  should see the following menu options (FAILED : 0s)</div><br/>
+<div "result">User chooses &quot;Meetings&quot; (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
+	at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
+	at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2117193231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117193231'><pre>java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
+	at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
+	at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
+</pre></div></td>
+<td>24</td>
+<td>com.zurmo.runners.CukesRunner@7e0b0338</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,34 +114,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Contact creation and validation", "Creating a contact"<br/>
-<a href="#Output-1726715997" onClick='toggleBox("Output-1726715997", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creatiog report by Name and Description", "Creating Reports using Matrix Report"<br/>
+<a href="#Output-2065886345" onClick='toggleBox("Output-2065886345", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1726715997" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1726715997">
-<div "result">User logged into the Zurmo (PASSED : 6s)</div><br/>
-<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 7s)</div><br/>
-<div "result">User click on create button (PASSED : 1s)</div><br/>
-<div "result">User creates contacts  using  &quot;Ms.&quot; &quot;Ann&quot; &quot;Bill&quot; &quot;Qualified&quot; &quot;developer&quot; &quot;ann@gmail.com&quot; (PASSED : 0s)</div><br/>
+<a href="#Output-2065886345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2065886345">
+<div "result">User should see the following filters (PASSED : 0s)</div><br/>
+<div "result">user chooses &quot;Name &quot;, &quot;Description&quot; (PASSED : 0s)</div><br/>
+<div "result">User types &quot;Sprint Planning&quot; for description field (PASSED : 0s)</div><br/>
+<div "result">User types &quot;John&quot; for Name field (PASSED : 0s)</div><br/>
+<div "result">User chooses  under Select Groupings section  &quot;Start date &quot; as X-Axis and &quot;Owner&quot; as Y-Axis (PASSED : 0s)</div><br/>
+<div "result">User choses under Select Display Columns &quot;Count&quot; and enter 100 (PASSED : 0s)</div><br/>
+<div "result">User types &quot;John &quot; for Name (PASSED : 0s)</div><br/>
+<div "result">Meetings Matrix Report for Jogn should be displayed (PASSED : 0s)</div><br/>
 </div>
 </td>
 <td></td>
-<td>17</td>
-<td>com.zurmo.runners.CukesRunner@7e0b0338</td></tr>
-<tr>
-<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Contact creation and validation", "Creating a contact"<br/>
-<a href="#Output-1345293143" onClick='toggleBox("Output-1345293143", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1345293143" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1345293143">
-<div "result">User logged into the Zurmo (PASSED : 1s)</div><br/>
-<div "result">User clicks on &quot;Contacts&quot; on the menu bar (PASSED : 8s)</div><br/>
-<div "result">User click on create button (PASSED : 1s)</div><br/>
-<div "result">User creates contacts  using  &quot;Mr.&quot; &quot;Alex&quot; &quot;Kim&quot; &quot;Customer&quot; &quot;customer&quot; &quot;alexkim@gmail.com&quot; (PASSED : 0s)</div><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
+<td>0</td>
 <td>com.zurmo.runners.CukesRunner@7e0b0338</td></tr>
 </table><p>
 </body>
