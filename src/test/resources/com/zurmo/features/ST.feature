@@ -1,11 +1,9 @@
-@smoke
+@ST
 Feature: Smoke Test				
-						
-Background:						
+											
+Scenario: Validation of Leads functionality
 Given User logged into the Zurmo						
-And User clicks on leads on the menu bar						
-						
-Scenario: Validation of Leads functionality						
+And User clicks on leads on the menu bar								
 And User should see the following functionalities						
 |Create|						
 |Update|						
@@ -14,27 +12,32 @@ And User should see the following functionalities
 |Subscribe|						
 |Merge|						
 Then User have ability to click all functionalities
-	
 
-Scenario: Creating New Items Negative																							
-And User clicks the create catolog items																									
-Then User should see the create catolog items page 																									
-Then User should have the following options to create products																									
-|Name|																									
-|Description|																									
-|Categories|																									
-|Status|																									
-|Type|																									
-|Price Frequency|																									
-|Sell Price Formula|																									
-|Cost|																									
-|List Price|																									
-|Sell Price|					
 
-Scenario:  Contact creation and validation	
-And User clicks on "Contacts" on the menu bar	
-Then User click on create button
-And User should type lastname "Kim"
-And User should see the created contact
+Scenario: Contact Function is Working
+Given User logged into the Zurmo						
+And User clicks on Contacts on the menu bar
+Then User should get the "ZurmoCRM - Contacts"	
 
+
+Scenario: Projects Function is Working
+Given User logged into the Zurmo						
+And User clicks on Projects on the menu bar
+Then User should get the "ZurmoCRM - Projects"	
+
+Scenario: Products Function is Working
+Given User logged into the Zurmo						
+And User clicks on Products on the menu bar
+Then User should get the "ZurmoCRM - Products"
+
+Scenario: Reports Function is Working
+Given User logged into the Zurmo						
+And User clicks on Reports on the menu bar
+Then User should get the "ZurmoCRM - Reports"
+
+#Scenario:  Contact creation and validation	
+#And User clicks on "Contacts" on the menu bar	
+#Then User click on create button
+#And User should type lastname "Kim"
+#And User should see the created contact
 		

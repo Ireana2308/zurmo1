@@ -1,6 +1,6 @@
 Feature: Creating a contact					
 					
-@contact4
+@contact
 Scenario Outline:  Contact creation and validation	
 Given User logged into the Zurmo	
 And User clicks on "Contacts" on the menu bar	

@@ -1,160 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">I logged into the Zurmo (PASSED : 5s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">user clicks on repots on the menu bar (PASSED : 6s)</div>]]>
+      <![CDATA[<div "result">User clicks on leads on the menu bar (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">user click on create report button (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">User should see the following functionalities (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">following menu options should be visible for Report Wizard (PASSED : 5s)</div>]]>
+      <![CDATA[<div "result">User have ability to click all functionalities (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User chooses &quot;Matrix&quot;and   clicks Create button (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User  should see the following menu options (FAILED : 0s)</div>]]>
+      <![CDATA[<div "result">User clicks on Contacts on the menu bar (PASSED : 12s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User chooses &quot;Meetings&quot; (SKIPPED)</div>]]>
+      <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Contacts&quot; (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User should see the following filters (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">user chooses &quot;Name &quot;, &quot;Description&quot; (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User clicks on Projects on the menu bar (PASSED : 7s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User types &quot;Sprint Planning&quot; for description field (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Projects&quot; (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User types &quot;John&quot; for Name field (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User chooses  under Select Groupings section  &quot;Start date &quot; as X-Axis and &quot;Owner&quot; as Y-Axis (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User clicks on Products on the menu bar (PASSED : 7s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User choses under Select Display Columns &quot;Count&quot; and enter 100 (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Products&quot; (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User types &quot;John &quot; for Name (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Meetings Matrix Report for Jogn should be displayed (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">User clicks on Reports on the menu bar (PASSED : 6s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Reports&quot; (PASSED : 1s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25099" started-at="2018-04-09T22:32:04Z" finished-at="2018-04-09T22:32:29Z">
+  <suite name="Default suite" duration-ms="64009" started-at="2018-04-10T00:36:45Z" finished-at="2018-04-10T00:37:49Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="25099" started-at="2018-04-09T22:32:04Z" finished-at="2018-04-09T22:32:29Z">
-      <class name="com.zurmo.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="setUpClass" is-config="true" duration-ms="142" started-at="2018-04-09T22:32:04Z" finished-at="2018-04-09T22:32:04Z">
+    <test name="Default test" duration-ms="64009" started-at="2018-04-10T00:36:45Z" finished-at="2018-04-10T00:37:49Z">
+      <class name="com.zurmo.runners.SmokeRunner$CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="setUpClass" is-config="true" duration-ms="147" started-at="2018-04-10T00:36:45Z" finished-at="2018-04-10T00:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" duration-ms="24882" started-at="2018-04-09T22:32:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-09T22:32:29Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" duration-ms="13976" started-at="2018-04-10T00:36:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-10T00:36:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Creating a Matrix Report"]]>
+                <![CDATA["Validation of Leads functionality"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating Reports using Matrix Report"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 11, Size: 11]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
-at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-at java.util.ArrayList.get(ArrayList.java:433)
-at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
-at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
-at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<div "result">I logged into the Zurmo (PASSED : 5s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">user clicks on repots on the menu bar (PASSED : 6s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">user click on create report button (PASSED : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">following menu options should be visible for Report Wizard (PASSED : 5s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User chooses &quot;Matrix&quot;and   clicks Create button (PASSED : 2s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User  should see the following menu options (FAILED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User chooses &quot;Meetings&quot; (SKIPPED)</div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" duration-ms="12" started-at="2018-04-09T22:32:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-09T22:32:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creatiog report by Name and Description"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating Reports using Matrix Report"]]>
+                <![CDATA["Smoke Test"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">User should see the following filters (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">user chooses &quot;Name &quot;, &quot;Description&quot; (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">User clicks on leads on the menu bar (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User types &quot;Sprint Planning&quot; for description field (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">User should see the following functionalities (PASSED : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User types &quot;John&quot; for Name field (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User chooses  under Select Groupings section  &quot;Start date &quot; as X-Axis and &quot;Owner&quot; as Y-Axis (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User choses under Select Display Columns &quot;Count&quot; and enter 100 (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">User types &quot;John &quot; for Name (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Meetings Matrix Report for Jogn should be displayed (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">User have ability to click all functionalities (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2018-04-09T22:32:29Z" finished-at="2018-04-09T22:32:29Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" duration-ms="15147" started-at="2018-04-10T00:36:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-10T00:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Function is Working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on Contacts on the menu bar (PASSED : 12s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Contacts&quot; (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" duration-ms="14688" started-at="2018-04-10T00:37:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-10T00:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Projects Function is Working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on Projects on the menu bar (PASSED : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Projects&quot; (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" duration-ms="9688" started-at="2018-04-10T00:37:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-10T00:37:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Products Function is Working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on Products on the menu bar (PASSED : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Products&quot; (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="runScenario" duration-ms="10293" started-at="2018-04-10T00:37:38Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-10T00:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Reports Function is Working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User clicks on Reports on the menu bar (PASSED : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User should get the &quot;ZurmoCRM - Reports&quot; (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.zurmo.runners.SmokeRunner$CukesRunner@617faa95]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2018-04-10T00:37:49Z" finished-at="2018-04-10T00:37:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.zurmo.runners.CukesRunner -->
+      </class> <!-- com.zurmo.runners.SmokeRunner$CukesRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 09 17:32:04 CDT 2018</td>
+<td>Started on:</td><td>Mon Apr 09 19:36:45 CDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25099 ms)</td>
+<tr><td>Total time:</td><td>64 seconds (64009 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,45 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating a Matrix Report", "Creating Reports using Matrix Report"<br/>
-<a href="#Output-2117193231" onClick='toggleBox("Output-2117193231", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2117193231" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2117193231">
-<div "result">I logged into the Zurmo (PASSED : 5s)</div><br/>
-<div "result">user clicks on repots on the menu bar (PASSED : 6s)</div><br/>
-<div "result">user click on create report button (PASSED : 1s)</div><br/>
-<div "result">following menu options should be visible for Report Wizard (PASSED : 5s)</div><br/>
-<div "result">User chooses &quot;Matrix&quot;and   clicks Create button (PASSED : 2s)</div><br/>
-<div "result">User  should see the following menu options (FAILED : 0s)</div><br/>
-<div "result">User chooses &quot;Meetings&quot; (SKIPPED)</div><br/>
-</div>
-</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
-	at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
-	at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2117193231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2117193231'><pre>java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
-	at com.zurmo.stepdefs.MatrixReportSetpDefs.user_should_see_the_following_menu_options(MatrixReportSetpDefs.java:73)
-	at ✽.User  should see the following menu options(src/test/resources/com/zurmo/features/MatrixReports.feature:14)
-</pre></div></td>
-<td>24</td>
-<td>com.zurmo.runners.CukesRunner@7e0b0338</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -114,24 +75,76 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zurmo.runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creatiog report by Name and Description", "Creating Reports using Matrix Report"<br/>
-<a href="#Output-2065886345" onClick='toggleBox("Output-2065886345", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.zurmo.runners.SmokeRunner$CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.SmokeRunner$CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Leads functionality", "Smoke Test"<br/>
+<a href="#Output-1120670624" onClick='toggleBox("Output-1120670624", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2065886345" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2065886345">
-<div "result">User should see the following filters (PASSED : 0s)</div><br/>
-<div "result">user chooses &quot;Name &quot;, &quot;Description&quot; (PASSED : 0s)</div><br/>
-<div "result">User types &quot;Sprint Planning&quot; for description field (PASSED : 0s)</div><br/>
-<div "result">User types &quot;John&quot; for Name field (PASSED : 0s)</div><br/>
-<div "result">User chooses  under Select Groupings section  &quot;Start date &quot; as X-Axis and &quot;Owner&quot; as Y-Axis (PASSED : 0s)</div><br/>
-<div "result">User choses under Select Display Columns &quot;Count&quot; and enter 100 (PASSED : 0s)</div><br/>
-<div "result">User types &quot;John &quot; for Name (PASSED : 0s)</div><br/>
-<div "result">Meetings Matrix Report for Jogn should be displayed (PASSED : 0s)</div><br/>
+<a href="#Output-1120670624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1120670624">
+<div "result">User logged into the Zurmo (PASSED : 5s)</div><br/>
+<div "result">User clicks on leads on the menu bar (PASSED : 5s)</div><br/>
+<div "result">User should see the following functionalities (PASSED : 0s)</div><br/>
+<div "result">User have ability to click all functionalities (PASSED : 0s)</div><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.zurmo.runners.CukesRunner@7e0b0338</td></tr>
+<td>13</td>
+<td>com.zurmo.runners.SmokeRunner$CukesRunner@617faa95</td></tr>
+<tr>
+<td title='com.zurmo.runners.SmokeRunner$CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.SmokeRunner$CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Contact Function is Working", "Smoke Test"<br/>
+<a href="#Output-1466413743" onClick='toggleBox("Output-1466413743", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1466413743" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1466413743">
+<div "result">User logged into the Zurmo (PASSED : 1s)</div><br/>
+<div "result">User clicks on Contacts on the menu bar (PASSED : 12s)</div><br/>
+<div "result">User should get the &quot;ZurmoCRM - Contacts&quot; (PASSED : 1s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.zurmo.runners.SmokeRunner$CukesRunner@617faa95</td></tr>
+<tr>
+<td title='com.zurmo.runners.SmokeRunner$CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.SmokeRunner$CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Projects Function is Working", "Smoke Test"<br/>
+<a href="#Output-573102881" onClick='toggleBox("Output-573102881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-573102881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-573102881">
+<div "result">User logged into the Zurmo (PASSED : 6s)</div><br/>
+<div "result">User clicks on Projects on the menu bar (PASSED : 7s)</div><br/>
+<div "result">User should get the &quot;ZurmoCRM - Projects&quot; (PASSED : 1s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.zurmo.runners.SmokeRunner$CukesRunner@617faa95</td></tr>
+<tr>
+<td title='com.zurmo.runners.SmokeRunner$CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.SmokeRunner$CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Products Function is Working", "Smoke Test"<br/>
+<a href="#Output-1219553025" onClick='toggleBox("Output-1219553025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1219553025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1219553025">
+<div "result">User logged into the Zurmo (PASSED : 1s)</div><br/>
+<div "result">User clicks on Products on the menu bar (PASSED : 7s)</div><br/>
+<div "result">User should get the &quot;ZurmoCRM - Products&quot; (PASSED : 1s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.zurmo.runners.SmokeRunner$CukesRunner@617faa95</td></tr>
+<tr>
+<td title='com.zurmo.runners.SmokeRunner$CukesRunner.runScenario()'><b>runScenario</b><br>Test class: com.zurmo.runners.SmokeRunner$CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reports Function is Working", "Smoke Test"<br/>
+<a href="#Output-605686842" onClick='toggleBox("Output-605686842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-605686842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-605686842">
+<div "result">User logged into the Zurmo (PASSED : 2s)</div><br/>
+<div "result">User clicks on Reports on the menu bar (PASSED : 6s)</div><br/>
+<div "result">User should get the &quot;ZurmoCRM - Reports&quot; (PASSED : 1s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.zurmo.runners.SmokeRunner$CukesRunner@617faa95</td></tr>
 </table><p>
 </body>
 </html>

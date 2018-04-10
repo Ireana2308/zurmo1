@@ -29,6 +29,18 @@ private WebDriver driver;
 	@FindBy(linkText="Contacts")
 	public WebElement contactsLink;
 	
+	@FindBy(linkText="Projects")
+	public WebElement projectLink; 
+	
+	@FindBy(linkText="Products")
+	public WebElement productsLink; 
+	
+	@FindBy(linkText="Reports")
+	public WebElement reportsLink; 
+	
+	@FindBy(xpath="//a[@class='toggle-hidden-nav-items']")
+	public WebElement dots;
+	
 	////a[@href='/zurmo/app/index.php/contacts/default']
 	@FindBy(xpath="//a[@class='button-action']")
 	public WebElement creatBtn;
