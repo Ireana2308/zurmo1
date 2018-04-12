@@ -32,7 +32,50 @@ private WebDriver driver;
 	@FindBy(xpath="(//span[@class='z-label'])[3]")
 	public WebElement mrcreatBtn;
 	
-	@FindBy(xpath="//div[@class='radio-input']")
-	public List <WebElement> selectList;
+	@FindBy(xpath="//div[@id='ModuleForReportWizardView']//label")
+	public List <WebElement> selectList1;
+	
+	@FindBy(xpath="//input[@id='MatrixReportWizardForm_moduleClassName_4']")
+	public WebElement meetingRadioButton;
+	
+	@FindBy(xpath="(//span[@class=\"z-label\"])[2]")
+	public WebElement nextBtn;
+	
+	@FindBy(xpath="//li[@class='open collapsable lastCollapsable']")
+	public List <WebElement> listOfFilters;
+	
+	@FindBy(xpath="//li[@id='Filters_description']")
+	public WebElement fromDescrip;
+	
+	@FindBy(xpath="//li[@id='Filters_name']")
+	public WebElement fromName;
+	
+	@FindBy(xpath="//div[@class='dynamic-droppable-area']") 
+	public WebElement toElement;
+	
+	@FindBy(xpath="(//div[@class='drop-zone'])[1]") 
+	public WebElement toElement1;
+	 
+	@FindBy(xpath="//div[@class='first-value-area']//input[@id='MatrixReportWizardForm_Filters_0_value']") 
+	public WebElement descripField;
+	 
+	@FindBy(xpath="//input[@id='MatrixReportWizardForm_Filters_1_value']") 
+	public WebElement nameField;
+	
+	
+	@FindBy(xpath="//a[@id='filterBysNextLink']") 
+	public WebElement btnNext;
+	
+	@FindBy(xpath="//li[@id='GroupBys_owner__User']")
+public WebElement fromOwner;	
+	
+	@FindBy(xpath="(//div[@class='drop-zone'])[2]") 
+	public WebElement toElement2;
+	
+	@FindBy(xpath="//li[@id='GroupBys_startDateTime__Day']") 
+	public WebElement fromStartDay;
+	
+	@FindBy(xpath="//select[@name='MatrixReportWizardForm[GroupBys][1][axis]']")
+	public WebElement SDnarrow;
 	
 }

@@ -12,7 +12,7 @@ Then following menu options should be visible for Report Wizard
 |Matrix          | 
 And User chooses "Matrix"and   clicks Create button
 And User  should see the following menu options 
-|Accounts |
+|Accounts|
 |Contacts and Leads|
 |Email Messages|
 |Marketing Lists|
@@ -24,9 +24,8 @@ And User  should see the following menu options
 |Tasks|
 |Projects|
 And User chooses "Meetings"
-
-Scenario: Creatiog report by Name and Description
 And User should see the following filters
+| |
 |Category|
 |Created By User|
 |Created Date Time|
@@ -52,7 +51,7 @@ And User should see the following filters
 And user chooses "Name ", "Description"
 And User types "Sprint Planning" for description field
 And User types "John" for Name field
-Then User chooses  under Select Groupings section  "Start date " as X-Axis and "Owner" as Y-Axis
+Then User chooses  under Select Groupings section "Owner" as X-Axis and "Start date " as Y-Axis
 And User choses under Select Display Columns "Count" and enter 100
 And User types "John " for Name
 And Meetings Matrix Report for Jogn should be displayed
