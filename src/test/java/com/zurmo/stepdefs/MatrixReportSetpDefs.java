@@ -4,6 +4,7 @@ import java.awt.Desktop.Action;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,7 +24,6 @@ import cucumber.api.java.en.When;
 
 public class MatrixReportSetpDefs {
 private WebDriver driver = Driver.getDriver();
-	
 	ZurmoHomePage login =new ZurmoHomePage();
 	ZurmoMatrixReportPage mr=new ZurmoMatrixReportPage();
 	
@@ -120,43 +120,63 @@ private WebDriver driver = Driver.getDriver();
 		mr.btnNext.click();
 	}
 
-	@Then("^User chooses  under Select Groupings section  \"([^\"]*)\" as Y-Axis and \"([^\"]*)\" as X-Axis$")
+	@Then("^User chooses  under Select Groupings section \"([^\"]*)\" as X-Axis and \"([^\"]*)\" as Y-Axis$")
 	public void user_chooses_under_Select_Groupings_section_as_X_Axis_and_as_Y_Axis(String arg1, String arg2) throws InterruptedException {
-	
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0, 600)");
 		Actions action=new Actions(driver);
+	//	action.moveToElement(mr.fromOwner).click().build().perform();
+		Thread.sleep(1000);
 		action.dragAndDrop(mr.fromOwner, mr.toElement2).build().perform();
 		Thread.sleep(3000);
 		action.dragAndDrop(mr.fromStartDay, mr.toElement2).build().perform();
-		 // List<String> window = new ArrayList<>(driver.getWindowHandles());
-			//driver.switchTo().window(window.get(1));
-		   
-	}
+		
+Select drop= new Select(mr.SDnarrow1);
+	Actions actions=new Actions(driver);
+  actions.moveToElement(mr.SDnarrow1).click().build().perform();
+drop.selectByValue("y");
+mr.nextButton.click();
 
-	@Then("^User chooses  under Select Groupings section \"([^\"]*)\" as X-Axis and \"([^\"]*)\" as Y-Axis$")
-	public void user_chooses_under_Select_Groupings_section_as_X_Axis_and_as_Y_Axis1(String arg1, String arg2) {
+}
 
-//Select drop= new Select(mr.SDnarrow);
-//		Actions action=new Actions(driver);
-  // action.moveToElement(mr.SDnarrow).click().build().perform();
-//drop.selectByValue("y");
-	}
-	
 	@Then("^User choses under Select Display Columns \"([^\"]*)\" and enter (\\d+)$")
-	public void user_choses_under_Select_Display_Columns_and_enter(String arg1, int arg2) {
-	
-	}
+	public void user_choses_under_Select_Display_Columns_and_enter(String arg1, int arg2) throws InterruptedException {
+		Actions action=new Actions(driver);
+		Thread.sleep(1000);
+		action.dragAndDrop(mr.fromCount, mr.toDropCount).build().perform();
+		mr.countField.clear();
+		mr.countField.sendKeys("100");	
+		action.moveToElement(mr.nextButtonCount).doubleClick().perform();
 
-	
+	}
 
 	@Then("^User types \"([^\"]*)\" for Name$")
 	public void user_types_for_Name(String arg1) {
-	    
+    mr.nameField1.sendKeys("John");
+		mr.saveBtn.click();
 	}
-
+	
 	@Then("^Meetings Matrix Report for Jogn should be displayed$")
 	public void meetings_Matrix_Report_for_Jogn_should_be_displayed() {
+	   Assert.assertTrue(mr.reportName.isDisplayed());
+		
 	   
 	}
+	   
+	   
+	   @Then("^user modifying cloumns of reports page$")
+	   public void user_modifying_cloumns_of_reports_page() {
+	   mr.columnDd.click();
+	   }
 
-	
+	   @Then("^user addind description to Visible Columns$")
+	   public void user_addind_description_to_Visible_Columns() {
+    mr.description.click();
+mr.toRight.click();
+mr.applyBtn.click();
+Assert.assertTrue(mr.descColumn.isDisplayed());
+	   }   
+	   
+	   
 }
+

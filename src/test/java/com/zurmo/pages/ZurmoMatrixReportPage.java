@@ -75,7 +75,57 @@ public WebElement fromOwner;
 	@FindBy(xpath="//li[@id='GroupBys_startDateTime__Day']") 
 	public WebElement fromStartDay;
 	
-	@FindBy(xpath="//select[@name='MatrixReportWizardForm[GroupBys][1][axis]']")
+	
+	@FindBy(xpath="(//span[@class='select-arrow'])[4]']")
 	public WebElement SDnarrow;
+	
+	@FindBy(xpath="//select[@id='MatrixReportWizardForm_GroupBys_1_axis']")
+	public WebElement SDnarrow1;
+	
+	@FindBy(xpath="//a[@id='groupBysNextLink']") 
+	public WebElement nextButton;
+
+	@FindBy(xpath="//li[@id='DisplayAttributes_Count']")
+	public WebElement fromCount;	
+	
+	@FindBy(xpath="(//div[@class='drop-zone'])[3]")
+	public WebElement toDropCount;	
+	
+	
+	@FindBy(xpath="//input[@id='MatrixReportWizardForm_DisplayAttributes_0_label']")
+	public WebElement countField;
+	
+	@FindBy(id="displayAttributesNextLink") 
+	public WebElement nextButtonCount;
+	
+	@FindBy(xpath="//input[@id='MatrixReportWizardForm_name']")
+	public WebElement nameField1;
+	
+	@FindBy(id="generalDataSaveAndRunLink")
+	public WebElement saveBtn;
+	
+	@FindBy(xpath="//li[@class='juiportlet-widget ReportResultsGridForPortletView type-reports']")
+	public WebElement verify;
+	
+	@FindBy(xpath="//span[@class='ellipsis-content']")
+	public WebElement reportName;
+	
+	
+	@FindBy(xpath="//a[@id='select-list-attributes-link']")
+	public WebElement columnDd;
+	
+	@FindBy(xpath="//option[@value='description']")
+	public WebElement description;
+	
+	@FindBy(xpath="//input[@id='yw2moveRight']")
+	public WebElement toRight;
+	
+	
+	@FindBy(xpath="//a[@id='list-attributes-apply']")
+	public WebElement applyBtn;
+	
+	
+	@FindBy(xpath="//th[@id='list-view_c5']")
+	public WebElement descColumn;
 	
 }
