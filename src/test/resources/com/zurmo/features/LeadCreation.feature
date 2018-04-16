@@ -1,11 +1,10 @@
 @mt1
-Feature: 	Lead Creation					
+Feature: Lead Creation					
 						
 Background:						
 Given User logged into the Zurmo						
 And User clicks on leads on the menu bar		
-				
-						
+									
 Scenario: Validation of Leads functionality						
 And User should see the following functionalities		
 |Create|							
@@ -16,7 +15,6 @@ And User should see the following functionalities
 |Merge |						
 Then User have ability to click all functionalities		
 
-				
 @mt2						
 Scenario: Validation of Status, Source and Industry						
 And User go to the create leads						
