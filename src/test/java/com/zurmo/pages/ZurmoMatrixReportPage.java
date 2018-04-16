@@ -119,7 +119,7 @@ public WebElement fromOwner;
 	
 	@FindBy(xpath="//input[@id='yw2moveRight']")
 	public WebElement toRight;
-	
+	//delete this line 
 	
 	@FindBy(xpath="//a[@id='list-attributes-apply']")
 	public WebElement applyBtn;
