@@ -1,6 +1,6 @@
-@RowsColumn
 Feature:  Creating Reports using Rows And Columns
 
+@RowsColumn
 Scenario: Creating a Rows And Columns Report
 Given   I logged into the Zurmo
 When user clicks on repots on the menu bar
