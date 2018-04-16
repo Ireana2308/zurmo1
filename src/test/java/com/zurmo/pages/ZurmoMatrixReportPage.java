@@ -17,6 +17,7 @@ private WebDriver driver;
 	PageFactory.initElements(driver, this);
 	}
 	//delete this line
+	//ffffff
 	
 	@FindBy(xpath="//a[@class='toggle-hidden-nav-items']")
 	public WebElement dots;
@@ -120,7 +121,7 @@ public WebElement fromOwner;
 	
 	@FindBy(xpath="//input[@id='yw2moveRight']")
 	public WebElement toRight;
-	
+	//delete this line 
 	
 	@FindBy(xpath="//a[@id='list-attributes-apply']")
 	public WebElement applyBtn;
