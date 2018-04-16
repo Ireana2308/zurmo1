@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 			plugin="html:target/cucumber",
 			features="src/test/resources/com/zurmo/features",
 			glue="com.zurmo.stepdefs",
-			tags="@MatrixReport",
+			tags="@RowsColumn",
 			dryRun=false
 	)
 	public class CukesRunner extends AbstractTestNGCucumberTests {

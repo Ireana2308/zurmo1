@@ -53,6 +53,13 @@ And User types "Sprint Planning" for description field
 And User types "John" for Name field
 Then User chooses  under Select Groupings section "Owner" as X-Axis and "Start date " as Y-Axis
 And User choses under Select Display Columns "Count" and enter 100
-And User types "John " for Name
+And User types "John" for Name
 And Meetings Matrix Report for Jogn should be displayed
+
+@reportC
+Scenario: Reports Columns build
+Given   I logged into the Zurmo
+When user clicks on repots on the menu bar
+Then user modifying cloumns of reports page
+And user addind description to Visible Columns
 
