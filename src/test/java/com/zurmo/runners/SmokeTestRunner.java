@@ -13,6 +13,5 @@ public class SmokeTestRunner {
 	)
 	public class CukesRunner extends AbstractTestNGCucumberTests {
 
-
 	}
 }
