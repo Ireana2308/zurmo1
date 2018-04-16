@@ -1,4 +1,4 @@
-@mTuran
+@mTuran @Regression
 Feature: 	Search Criterias	
 		
 Background:		

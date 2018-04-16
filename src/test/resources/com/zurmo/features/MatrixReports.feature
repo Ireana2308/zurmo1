@@ -1,4 +1,4 @@
-@MatrixReport
+@MatrixReport @Regression
 Feature:  Creating Reports using Matrix Report
 
 Scenario: Creating a Matrix Report

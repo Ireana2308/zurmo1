@@ -1,3 +1,4 @@
+@Regression
 Feature:  Creating Reports using Rows And Columns
 
 @RowsColumn
