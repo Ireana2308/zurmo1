@@ -41,7 +41,8 @@ public class CreateProject2StepDefs {
 		String expected = "Active";
 	    Thread.sleep(2000);
 		Assert.assertEquals(createProject.activeOrNot.getText(), expected);
-	    
+	    Thread.sleep(4000);
+
 
 	    
 }}

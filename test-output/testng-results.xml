@@ -2,59 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">I logged into the Zurmo (PASSED : 6s)</div>]]>
+      <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">user clicks on repots on the menu bar (PASSED : 20s)</div>]]>
+      <![CDATA[<div "result">User searchs project by project &quot;American eagle&quot; name (PASSED : 12s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">user modifying cloumns of reports page (PASSED : 5s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">user addind description to Visible Columns (PASSED : 11s)</div>]]>
+      <![CDATA[<div "result">User will see the project is active or not (PASSED : 3s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45862" started-at="2018-04-13T00:02:12Z" finished-at="2018-04-13T00:02:58Z">
+  <suite name="Default suite" duration-ms="24886" started-at="2018-04-16T20:53:26Z" finished-at="2018-04-16T20:53:51Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@2038ae61]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="45862" started-at="2018-04-13T00:02:12Z" finished-at="2018-04-13T00:02:58Z">
+    <test name="Default test" duration-ms="24886" started-at="2018-04-16T20:53:26Z" finished-at="2018-04-16T20:53:51Z">
       <class name="com.zurmo.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="setUpClass" is-config="true" duration-ms="144" started-at="2018-04-13T00:02:12Z" finished-at="2018-04-13T00:02:13Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.zurmo.runners.CukesRunner@2038ae61]" name="setUpClass" is-config="true" duration-ms="171" started-at="2018-04-16T20:53:26Z" finished-at="2018-04-16T20:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="runScenario" duration-ms="45651" started-at="2018-04-13T00:02:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-13T00:02:58Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.zurmo.runners.CukesRunner@2038ae61]" name="runScenario" duration-ms="24644" started-at="2018-04-16T20:53:26Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T20:53:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Reports Columns build"]]>
+                <![CDATA["Check Created Project"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating Reports using Matrix Report"]]>
+                <![CDATA["Project creation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I logged into the Zurmo (PASSED : 6s)</div>]]>
+              <![CDATA[<div "result">User logged into the Zurmo (PASSED : 6s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">user clicks on repots on the menu bar (PASSED : 20s)</div>]]>
+              <![CDATA[<div "result">User searchs project by project &quot;American eagle&quot; name (PASSED : 12s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">user modifying cloumns of reports page (PASSED : 5s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">user addind description to Visible Columns (PASSED : 11s)</div>]]>
+              <![CDATA[<div "result">User will see the project is active or not (PASSED : 3s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.zurmo.runners.CukesRunner@7e0b0338]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2018-04-13T00:02:58Z" finished-at="2018-04-13T00:02:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.zurmo.runners.CukesRunner@2038ae61]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2018-04-16T20:53:51Z" finished-at="2018-04-16T20:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
