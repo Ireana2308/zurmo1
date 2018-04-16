@@ -8,7 +8,7 @@ import com.zurmo.utilities.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class SmokeTestStepDef {
+public class SmokeTestStepDefs {
     ZurmoHomePage main=new ZurmoHomePage(); 
 	
    

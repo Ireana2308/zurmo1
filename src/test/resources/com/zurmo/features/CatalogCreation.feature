@@ -1,4 +1,4 @@
-@th1.
+@th1. @Regression
 Feature: 	Creating Catolog Item	
 
 Background:					

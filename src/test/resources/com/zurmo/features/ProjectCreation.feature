@@ -1,3 +1,4 @@
+@Regression
 Feature: Project creation 
 @createPro
 Scenario Outline: Creating a Project 

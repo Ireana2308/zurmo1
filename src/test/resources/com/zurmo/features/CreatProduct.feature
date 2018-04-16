@@ -1,4 +1,4 @@
-@product
+@product @Regression
 Feature: creation products
 Scenario: Creation products
 Given User logged into the Zurmo

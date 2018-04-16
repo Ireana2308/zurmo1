@@ -1,3 +1,4 @@
+@Regression
 Feature: 	Meeting Creation			
 				
 Background:				

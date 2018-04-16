@@ -1,4 +1,4 @@
-@mt1
+@mt1 @Regression
 Feature: Lead Creation					
 						
 Background:						
@@ -50,4 +50,4 @@ Then user logout from application
 						
 Examples:						
 | firstName | lastName | mobilePhone | jobTitle | department| companyName|email|						
-| America1nm12 |Eag1l4ems2| 773n47713892| Scrmj Te14am12| QA411u2| Cybertet1k4School2|ameriicane4a1gle2@gmail.com|	
+| Tom |White| 7737713892| Scrm Team12 | QAManager| CybertkSchools|americaneaagle2d@gmail.com|	

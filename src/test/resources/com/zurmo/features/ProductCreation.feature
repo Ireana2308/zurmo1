@@ -1,4 +1,4 @@
-@th2.
+@th2. @Regression
 Feature: 	Products Creation				
 					
 Background:					

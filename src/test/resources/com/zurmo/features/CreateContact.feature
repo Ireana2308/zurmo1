@@ -1,3 +1,4 @@
+@Regression
 Feature: Creating a contact					
 					
 @contact
@@ -11,8 +12,8 @@ And User should be able to see information about a saved  contact
 
 Examples: 
           |prefix |  First Name | Last Name |  Status   | Job Title | Primary Email|
-          |Ms.    | Ann         |      Bill | Qualified | developer | ann@gmail.com|
-          |Mr.    | Alex        | Kim       | Customer  | customer  | alexkim@gmail.com|
+          |Ms.    | Ann1         |      Bill1 | Qualified1 | developer1 | ann1@gmail.com|
+          |Mr.    | Alex1        | Kim 1      | Customer1  | customer1  | alexkim1@gmail.com|
           
  @negativContact   
   Scenario: UnSuccessfull creation of contact 
