@@ -20,7 +20,6 @@ public class Hooks {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().fullscreen();
 	}
-
 	@After
 	public void tearDown(Scenario scenario) {
 		if (scenario.isFailed()) {

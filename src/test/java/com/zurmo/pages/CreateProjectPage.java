@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.zurmo.utilities.Driver;
 
@@ -31,11 +32,24 @@ private WebDriver driver;
 	
 	@FindBy(xpath="//a[@id='saveyt3']//span[@class='z-label']")
 	public WebElement saveProject;
-	@FindBy(xpath=" //ul[@id='ShortcutsMenu']")
+	
+	@FindBy(xpath="//ul[@id='ShortcutsMenu']")
 	public WebElement createBtnHover;
+	
 	@FindBy(xpath="//a[@href='/zurmo/app/index.php/projects/default/create']")
 	public WebElement projectName;
-	// create project ends
 	
+	@FindBy(xpath="//input[@id='globalSearchInput']")
+	public WebElement searchKey;
+	
+	@FindBy(xpath="//span[@class='autocomplete-icon-AllResults']")
+	public WebElement allResult;
+	
+	@FindBy(xpath="//a[@href='/zurmo/app/index.php/projects/default/details?id=1&stickyOffset=0']")
+	public WebElement foundResult;
+	
+	@FindBy(xpath="(//td[@colspan='1'])[6]")
+	public WebElement activeOrNot;
+		
 	
 }
