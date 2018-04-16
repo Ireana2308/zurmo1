@@ -16,7 +16,6 @@ And User should see the following functionalities
 |Merge |						
 Then User have ability to click all functionalities		
 
-				
 @mt2						
 Scenario: Validation of Status, Source and Industry						
 And User go to the create leads						

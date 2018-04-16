@@ -101,6 +101,112 @@ public class ZurmoLeadsPage {
 	public WebElement clickSave; 
 	
 	
+
+	///++++++++=========================================================
+    //Search Criteria Scenario 1
+	
+	@FindBy(id="more-search-link")
+	public WebElement advancedButton; 
+	
+	@FindBy(xpath="(//span[@class=\"z-label\"])[1]")
+	public WebElement addCriteria;
+	
+	@FindBy(xpath="//select[@id=\"LeadsSearchForm_dynamicClauses_0_attributeIndexOrDerivedType\"]")
+	public WebElement selectField1; 
+	
+	
+	@FindBy(xpath="//select[@id=\"LeadsSearchForm_dynamicClauses_0_attributeIndexOrDerivedType\"]//option")
+	public List<WebElement> selectField2; 
+	
+	@FindBy(id="LeadsSearchForm_dynamicClauses_0_modifiedDateTime__DateTime_type")
+	public WebElement between; 
+	
+	@FindBy(xpath="//select[@id=\"LeadsSearchForm_dynamicClauses_0_modifiedDateTime__DateTime_type\"]//option")
+	public List<WebElement> selectBetween; 
+	
+	@FindBy(xpath="(//input[@class=\"hasDatepicker\"])[1]")
+	public WebElement date1; 
+	
+	@FindBy(xpath="(//input[@class=\"hasDatepicker\"])[2]")
+	public WebElement date2; 
+	
+	@FindBy(id="save-as-advanced-search")
+	public WebElement saveSearchButton; 
+	
+	@FindBy(id="LeadsSearchForm_savedSearchName")
+	public WebElement searchName;
+	
+	@FindBy(id="save-advanced-search")
+	public WebElement saveButton;
+	
+	@FindBy(id="savedSearchId")
+	public WebElement SavedSearch; 
+	
+	@FindBy(xpath="//select[@id=\"savedSearchId\"]//option")
+	public List<WebElement> loopSavedSearch; 
+	
+	
+	///++++++++=========================================================
+    //Search Criteria Scenario 2
+	
+		
+	@FindBy(id="select-list-attributes-link")
+	public WebElement columns; 
+	
+	@FindBy(xpath="//div[@class='multiselect-left']//label")
+	public WebElement hidden; 
+	
+	@FindBy(xpath="//div[@class='multiselect-right']//label")
+	public WebElement visible; 
+	
+	@FindBy(xpath="//select[@id='LeadsSearchForm_selectedListAttributes_hidden']//option")
+	public List<WebElement> hiddenColumns; 
+	
+	@FindBy(xpath="//select[@id='LeadsSearchForm_selectedListAttributes']//option")
+	public List<WebElement> visibleColumns; 
+	
+	@FindBy(id="yw2moveRight")
+	public WebElement arrowRight; 
+	
+	@FindBy(id="list-attributes-apply")
+	public WebElement applyButton; 
+	
+	@FindBy(xpath="//thead//tr//th//a")
+	public List<WebElement> informationColums;
+	
+	
+	public static boolean compareList(List ls1, List ls2) {
+		
+		return ls1.toString().contentEquals(ls2.toString())?true:false;
+	}
+	
+	///++++++++=========================================================
+    //Search Criteria Scenario 3
+	
+	@FindBy(id="items-i-own-search-link")
+	public WebElement itemsOwn; 
+	
+	
+	@FindBy(id="LeadsSearchForm_dynamicClauses_0_attributeIndexOrDerivedType")
+	public WebElement fieldButton; 
+	
+	
+	@FindBy(xpath="//select[@id='LeadsSearchForm_dynamicClauses_0_attributeIndexOrDerivedType']//option")
+	public List<WebElement> fieldlist; 
+	
+	
+	@FindBy(xpath="//select[@id='LeadsSearchForm_dynamicClauses_0_industry_value']//option")
+	public List<WebElement> industryList; 
+	
+	
+	@FindBy(id="save-as-advanced-search")
+	public WebElement saveFieldButton; 
+	
+	
+	@FindBy(id="LeadsSearchForm_savedSearchName")
+	public WebElement leadsSearcField; 
+	
+	
 	public List<WebElement> topMenuOptions(String name) {
 		
 		String xpath="//td[.='"+name+"']"; 
@@ -113,6 +219,7 @@ public class ZurmoLeadsPage {
 		String xpath="//td[.='"+name+"']"; 
 		return driver.findElement(By.xpath(xpath)).getText();
 	}
+	
 	
 
 

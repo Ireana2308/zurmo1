@@ -12,7 +12,7 @@ import com.zurmo.utilities.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class CreatCategorydefs {
+public class CreatCategoryStepDefs {
 	private WebDriver driver = Driver.getDriver();
 	
 	CreateCategoryTests product=new CreateCategoryTests();
