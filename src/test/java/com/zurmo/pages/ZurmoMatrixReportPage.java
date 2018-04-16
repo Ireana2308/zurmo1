@@ -16,6 +16,7 @@ private WebDriver driver;
 	this.driver=Driver.getDriver();
 	PageFactory.initElements(driver, this);
 	}
+	//delete this line
 	
 	@FindBy(xpath="//a[@class='toggle-hidden-nav-items']")
 	public WebElement dots;
