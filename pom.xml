@@ -53,8 +53,21 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>2.4.0</version>
 		</dependency>
-
+		
+	<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
 	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>oracle</id>
+			<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -63,7 +76,8 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_runner.xml</suiteXmlFile>
+					<!-- this line tell maven surefire plugin which file should be executed-->
+						<suiteXmlFile>${runner}</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
@@ -81,12 +95,16 @@
 						</goals>
 						<configuration>
 							<projectname>TestProject</projectname>
+							<!-- path to the report that will be generated -->
 							<outputdirectory>${project.build.directory}/cucumber-html-reports</outputdirectory>
+							<!-- path to the json file that will be used to genetrate report -->
+							<!-- it has to match the one on the cukesrunner -->
 							<cucumberoutput>${project.build.directory}/target/cucumber.json</cucumberoutput>
 							<enableflashcharts></enableflashcharts>
 						</configuration>
 					</execution>
 				</executions>
+
 			</plugin>
 		</plugins>
 	</build>

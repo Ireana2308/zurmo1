@@ -3,7 +3,7 @@ package com.zurmo.runners;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-public class SmokeRunner {
+public class SmokeTestRunner {
 	@CucumberOptions(
 			plugin="html:target/cucumber",
 			features="src/test/resources/com/zurmo/features",
