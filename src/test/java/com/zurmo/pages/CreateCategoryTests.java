@@ -37,7 +37,7 @@ public class CreateCategoryTests {
 	     saveButton.click();
 
 	}
-
+///creat cat
 	@FindBy(id = "products")
 	public WebElement productbutton2;
 	@FindBy(xpath = "//i[@class='icon-product-categories']")
